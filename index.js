@@ -19,13 +19,13 @@ function johnLennonFacts(facts){
     var string = "!!!"
     var i = 0
 
-    while (facts.length > 0 && i < facts.length) {
+    while (i < facts.length) {
 
       facts[i] = `${facts[i]}${string}`
       facts = [...facts, facts[i]]
 
       testArray = [...testArray, facts[i]]
-      facts.slice(1)
+      facts--
       i++
     }
       return testArray
