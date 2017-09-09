@@ -25,7 +25,6 @@ function johnLennonFacts(facts){
       //facts = [...facts, facts[i]]
 
       testArray = [...testArray, facts[i]]
-      facts--
       i++
     }
       return testArray
